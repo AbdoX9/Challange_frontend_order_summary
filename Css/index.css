@@ -1,0 +1,138 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --primarycolorpale: hsl(225, 100%, 94%);
+    --primarycolorbright: hsl(245, 75%, 52%);
+    --Neutralpaleblue: hsl(225, 100%, 98%);
+    --Neutraldesblue: hsl(224, 23%, 55%);
+    --Neutraldarkblue: hsl(223, 47%, 23%);
+    --fontsize: 16px;
+    --padding: 10px 20px;
+}
+
+main {
+    background-image: url(../Photos/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-y: -110px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primarycolorpale);
+}
+
+main .order_box {
+    width: 380px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .order_box .image img {
+    max-width: 100%;
+
+}
+
+main .order_box .text {
+    padding: var(--padding);
+}
+
+main .order_box .text h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+main .order_box .text p {
+    line-height: 1.5;
+    font-size: var(--fontsize);
+    color: var(--Neutraldesblue);
+}
+
+main .order_box .plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Neutralpaleblue);
+    width: 75%;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    padding: var(--padding);
+}
+
+main .order_box .plan .image {
+    width: 50px;
+}
+
+main .order_box .plan .info {
+    margin: auto 15px auto;
+}
+
+main .order_box .plan .info h3 {
+    font-size: var(--fontsize);
+    font-weight: 600;
+}
+
+
+main .order_box .plan .info span {
+    display: block;
+    margin-top: -10px;
+    color: var(--Neutraldesblue);
+}
+
+main .order_box .plan .info span::before {
+    content: attr(dollar);
+}
+
+
+main .order_box .plan .info span::after {
+    content: attr(date);
+}
+
+main .order_box .plan a {
+    flex-grow: 1;
+    margin-left: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--primarycolorbright);
+}
+
+main .order_box .plan a:hover {
+    color: var(--Neutraldesblue);
+    text-decoration: none;
+}
+
+main .payment_button a:first-of-type {
+    text-decoration: none;
+    background-color: var(--primarycolorbright);
+    width: 75%;
+    margin: 0 auto 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 7px 17px 10px -3px var(--primarycolorpale);
+    display: block;
+}
+
+main .payment_button a:first-of-type:hover {
+    background-color: var(--Neutraldesblue);
+}
+
+main .payment_button a:last-child {
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: var(--Neutraldesblue);
+    display: inline-block;
+}
+
+main .payment_button a:last-child:hover {
+    color: var(--Neutraldarkblue);
+}
