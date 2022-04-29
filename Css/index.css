@@ -37,6 +37,13 @@ main .order_box {
     overflow: hidden;
 }
 
+
+@media (max-width:767px) {
+    main .order_box {
+        width: 325px;
+    }
+}
+
 main .order_box .image img {
     max-width: 100%;
 
