@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    background-image: url(../Photos/pattern-background-desktop.svg);
+    background-image: url(../photos/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     height: 100vh;
     background-position-y: -110px;
